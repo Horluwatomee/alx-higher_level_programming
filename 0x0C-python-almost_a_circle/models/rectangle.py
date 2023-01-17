@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 """
     contains class Rectangle which implements Base.
