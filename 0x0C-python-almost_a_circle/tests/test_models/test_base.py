@@ -32,10 +32,9 @@ class TestBase_instantiation(unittest.TestCase):
         b3 = Base()
         self.assertEqual(b1.id, b3.id - 2)
 
-    def test_None_id(self):
-        b1 = Base(None)
-        b2 = Base(None)
-        self.assertEqual(b1.id, b2.id - 1)
+    def test_list_id(self):
+        b = Base([1, 2, 3])
+        self.assertEqual([1, 2, 3], b.id)
 
     def test_unique_id(self):
         self.assertEqual(12, Base(12).id)
